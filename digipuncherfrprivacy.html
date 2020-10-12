@@ -9,6 +9,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
   </head>
+
+  <style>
+    #btnPrivacyMobile {
+      display: none;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 500px) {
+      #btnPrivacy {
+        display: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      #btnPrivacyMobile {
+        display: inline-block;
+      }
+    }
+  </style>
+
   <body>
     <div class="ui inverted segment" style="border-radius: 0">
       <div class="ui inverted secondary menu container">
@@ -18,13 +38,23 @@
             >DigiPuncher Face Recognition</span
           >
         </div>
+        <a
+        id="btnPrivacy"
+        class="ui inverted primary basic button item right floated"
+        href="https://santoscomputer.github.io/digipuncherfrsupport.html"
+        >Support</a>
       </div>
     </div>
 
     <div class="ui container" style="margin-top: 2%">
       <h1 class="ui center aligned icon header">
         <i class="lock icon blue"></i>
-        <span>DigiPuncher FR mobile Privacy</span>
+        <span>DigiPuncher FR mobile Privacy</span> <br/>
+        <a id="btnPrivacyMobile"
+        class="ui primary basic button"
+        href="https://santoscomputer.github.io/digipuncherfrsupport.html"
+        >Privacy</a
+      >
       </h1>
 
       <div class="ui relaxed divided list">
@@ -220,6 +250,5 @@
         text-align: center;
       }
     </style>
-
   </body>
 </html>

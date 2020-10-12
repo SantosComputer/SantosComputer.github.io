@@ -41,16 +41,9 @@
         margin: 20px 0px !important;
       }
 
-      @keyframes floating {
-        from {
-          transform: translate(0, 0px);
-        }
-        65% {
-          transform: translate(0, 15px);
-        }
-        to {
-          transform: translate(0, -0px);
-        }
+      #btnPrivacyMobile{
+        display: none;
+        margin-top: 15px;
       }
 
       @keyframes rotate {
@@ -58,6 +51,19 @@
           transform: rotate(360deg);
         }
       }
+
+      @media (max-width: 500px) {
+        #btnPrivacy {
+          display: none;
+        }
+      }
+
+      @media (max-width: 500px) {
+        #btnPrivacyMobile {
+          display: inline-block;
+        }
+      }
+
     </style>
   </head>
 
@@ -70,13 +76,24 @@
             >DigiPuncher Face Recognition</span
           >
         </div>
+        <a
+          id="btnPrivacy"
+          class="ui inverted primary basic button item right floated"
+          href="https://santoscomputer.github.io/digipuncherfrprivacy.html"
+          >Privacy</a
+        >
       </div>
     </div>
 
     <div class="ui container" style="margin-top: 2%">
       <h2 class="ui center aligned icon header">
         <i class="cogs blue icon"></i>
-        DigiPuncher FR mobile support
+        DigiPuncher FR mobile support <br/>
+        <a id="btnPrivacyMobile"
+          class="ui primary basic button"
+          href="https://santoscomputer.github.io/digipuncherfrprivacy.html"
+          >Privacy</a
+        >
       </h2>
 
       <div class="ui segment" style="font-size: 18px; letter-spacing: 0.5px">
