@@ -88,7 +88,7 @@
     <div class="ui container" style="margin-top: 2%">
       <h2 class="ui center aligned icon header">
         <i class="cogs blue icon"></i>
-        DigiPuncher FR mobile support <br/>
+        DigiPuncher FR App Support <br/>
         <a id="btnPrivacyMobile"
           class="ui primary basic button"
           href="https://santoscomputer.github.io/digipuncherfrprivacy.html"
@@ -102,8 +102,8 @@
         recognition is as easy as downloading the application to your phone,
         entering the registration code received in a text message and clock-in.
         The registration code configures the application to your employee number
-        and company ID. If you wish to know more on how to use the Application
-        watch our user guide below. If you need further assistance we are always
+        and company ID. If you wish to know more on how to use the application
+        watch our user guide below or press the Power Point icon button for more information. If you need further assistance we are always
         available at <a href="tel:787-868-9100">787-868-9100</a> or
         <a href="mailto:scs.digipuncher@gmail.com">scs.digipuncher@gmail.com</a
         >.
@@ -278,11 +278,12 @@
         </div>
         <div
           class="toolbar toolbar-bottom"
-          role="toolbar"
-          style="text-align: right"
-        >
-          <button class="btn sw-btn-prev" type="button">Previous</button
-          ><button class="btn sw-btn-next disabled" type="button">Next</button>
+          role="toolbar">
+
+          <a target="_blank" href="https://santoscomputer.github.io/DigiFRPresentationWeb.html" class="ui button circular icon"><i title="DigiPuncher FR Presentation" style="font-size: 18px;" class="file powerpoint outline icon"></i></a>
+          <button class="ui green button sw-btn-next disabled right floated" type="button">Next <i class="hand point right outline icon"></i></button>
+          <button class="ui blue button sw-btn-prev right floated" type="button"><i class="hand point left outline icon"></i> Previous</button>
+
         </div>
       </div>
     </div>
@@ -302,15 +303,6 @@
 
     <script>
       $(document).ready(function () {
-        const $btnPrev = $("button.btn.sw-btn-prev");
-        const $btnNext = $("button.btn.sw-btn-next");
-
-        $btnPrev.removeClass("btn").addClass("ui blue button");
-        $btnPrev.prepend(`<i class="hand point left outline icon"></i>`);
-
-        $btnNext.removeClass("btn").addClass("ui green button");
-        $btnNext.append(`<i class="hand point right outline icon"></i>`);
-
         $("#smartwizard").smartWizard();
       });
     </script>
